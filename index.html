@@ -1,28 +1,486 @@
 <!DOCTYPE html>
+
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="D'GEO - Empresa especializada en geotecnia que ofrece soluciones oportunas, correctas y eficaces con profesionales expertos comprometidos con la más alta calidad.">
-    <meta name="keywords" content="geotecnia, estudios geotécnicos, laboratorio, Costa Rica, San José, ingeniería">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="D'GEO - Empresa especializada en geotecnia que ofrece soluciones oportunas, correctas y eficaces con profesionales expertos comprometidos con la más alta calidad." name="description"/>
+<meta content="geotecnia, estudios geotécnicos, laboratorio, Costa Rica, San José, ingeniería" name="keywords"/>
+<!-- Open Graph -->
+<meta content="D'GEO - Soluciones Geotécnicas de Alta Calidad" property="og:title"/>
+<meta content="Empresa especializada en geotecnia con profesionales expertos comprometidos con la excelencia." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>D'GEO - Soluciones Geotécnicas de Alta Calidad | Costa Rica</title>
+<!-- Favicon placeholder - Reemplazar con logo real -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;circle cx='50' cy='50' r='40' fill='%232d5f3f'/&gt;&lt;text x='50' y='60' font-size='40' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'&gt;D&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Header Sticky -->
+<header class="header" id="header">
+<div class="container header-container">
+<!-- Logo - Reemplazar con logo real de D'GEO -->
+<a class="logo" href="#inicio">
+<div class="logo-circle">D'GEO</div>
+</a>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Abrir menú de navegación" class="menu-toggle" id="menuToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<!-- Navigation -->
+<nav class="nav" id="nav">
+<ul class="nav-list">
+<li><a class="nav-link active" href="#inicio">Inicio</a></li>
+<li><a class="nav-link" href="#servicios">Servicios</a></li>
+<li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+<li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+<li><a class="nav-link" href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+<!-- Header CTAs -->
+<div class="header-actions">
+<button aria-label="Cambiar tema" class="theme-toggle" id="themeToggle">
+<svg class="sun-icon" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+<svg class="moon-icon" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+</button>
+<a class="btn btn-whatsapp" href="https://wa.me/50622538047" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+                    WhatsApp
+                </a>
+<a class="btn btn-primary" href="#contacto">Solicitar Cotización</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="hero" id="inicio">
+<div class="hero-overlay"></div>
+<div class="container hero-container">
+<div class="hero-content">
+<h1 class="hero-title fade-in">Soluciones Geotécnicas de Alta Calidad</h1>
+<p class="hero-subtitle fade-in">
+                        Bienvenido a D'GEO, somos una empresa especializada en el área de la geotecnia que busca entregar soluciones oportunas, correctas y eficaces a nuestros clientes. Queremos poner a sus servicios nuestro grupo de profesionales expertos, estamos comprometidos con ofrecer la más alta calidad en cada uno de nuestros procesos.
+                    </p>
+<div class="hero-ctas fade-in">
+<a class="btn btn-primary btn-lg" href="#servicios">Ver Servicios</a>
+<a class="btn btn-secondary btn-lg" href="#contacto">Contactar Ahora</a>
+</div>
+</div>
+</div>
+<div class="scroll-indicator">
+<span></span>
+</div>
+</section>
+<!-- Servicios Section -->
+<section class="services" id="servicios">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Nuestros Servicios</h2>
+<p class="section-subtitle">Soluciones integrales en geotecnia con tecnología de vanguardia</p>
+</div>
+<div class="services-grid">
+<article class="service-card">
+<div class="service-image-wrapper">
+<img alt="Estudios geotécnicos con objetivos claros" class="service-image" loading="lazy" src="assets/img/588017377_17910843825276969_7337367551746287911_n.jpg"/>
+</div>
+<h3 class="service-title">Investigación Geotécnica</h3>
+<p class="service-description">
+                            Estudios detallados del subsuelo mediante sondeos, ensayos in-situ y caracterización geológica para proyectos de construcción e infraestructura.
+                        </p>
+</article>
+<article class="service-card">
+<div class="service-image-wrapper">
+<img alt="Control de calidad con cilindros de concreto en laboratorio" class="service-image" loading="lazy" src="assets/img/589197184_17910843816276969_406893929406553297_n.jpg"/>
+</div>
+<h3 class="service-title">Laboratorio Especializado</h3>
+<p class="service-description">
+                            Ensayos de mecánica de suelos y rocas con equipos de última generación, análisis granulométricos, límites de Atterberg, resistencia al corte y compactación.
+                        </p>
+</article>
+<article class="service-card">
+<div class="service-image-wrapper">
+<img alt="Proyecto Green Park - Naves industriales" class="service-image" loading="lazy" src="assets/img/602040659_17911325481276969_4844624795924360327_n.jpg"/>
+</div>
+<h3 class="service-title">Diseño y Construcción</h3>
+<p class="service-description">
+                            Diseño de cimentaciones, muros de contención, estabilización de taludes y soluciones geotécnicas personalizadas con supervisión técnica especializada.
+                        </p>
+</article>
+<article class="service-card">
+<div class="service-image-wrapper">
+<img alt="Personal estudiando el terreno con equipo especializado" class="service-image" loading="lazy" src="assets/img/602865706_17911325463276969_6823163488040668716_n.jpg"/>
+</div>
+<h3 class="service-title">Monitoreo e Innovación</h3>
+<p class="service-description">
+                            Instrumentación geotécnica, monitoreo continuo de estructuras, análisis de estabilidad y aplicación de tecnologías innovadoras en geotecnia.
+                        </p>
+</article>
+</div>
+</div>
+</section>
+<!-- Sobre Nosotros Section -->
+<section class="about" id="nosotros">
+<div class="container">
+<div class="about-grid">
+<div class="about-image">
+<img alt="Equipo de profesionales D'GEO estudiando el terreno" class="about-img" loading="lazy" src="assets/img/602840176_17911325454276969_3693768459310922738_n.jpg"/>
+</div>
+<div class="about-content">
+<h2 class="section-title">Sobre Nosotros</h2>
+<p class="about-text">
+                            Somos una empresa especializada en el área de la geotecnia que busca entregar soluciones oportunas, correctas y eficaces a nuestros clientes.
+                        </p>
+<p class="about-text">
+                            Queremos poner a sus servicios nuestro grupo de profesionales expertos, estamos comprometidos con ofrecer la más alta calidad en cada uno de nuestros procesos.
+                        </p>
+<p class="about-text">
+                            Nuestro equipo cuenta con amplia experiencia en proyectos de infraestructura, edificaciones y obras civiles en Costa Rica, garantizando soluciones técnicas de excelencia.
+                        </p>
+<div class="about-stats">
+<div class="stat">
+<div class="stat-number">15+</div>
+<div class="stat-label">Años de Experiencia</div>
+</div>
+<div class="stat">
+<div class="stat-number">500+</div>
+<div class="stat-label">Proyectos Completados</div>
+</div>
+<div class="stat">
+<div class="stat-number">100%</div>
+<div class="stat-label">Satisfacción del Cliente</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial & Clientes Section -->
+<section class="testimonial-section">
+<div class="container">
+<div class="testimonial-card">
+<div class="quote-icon">
+<svg fill="currentColor" height="48" viewbox="0 0 24 24" width="48">
+<path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+</svg>
+</div>
+<blockquote class="testimonial-text">
+                        "El nivel técnico, despliegue y presentación de los informes, así como el uso de medios audiovisuales diferencian a D'GEO de las demás empresas consultoras del país. Aunado a la respuesta inmediata y una inversión económica muy razonable, hacen que el producto recibido tenga la mejor relación costo beneficio para la ejecución de estudios geotécnicos en el mercado."
+                    </blockquote>
+<div class="testimonial-author">
+<strong>Ing. Oldemar Bermúdez</strong>
+<span>Gerente Técnico, Maccaferri de Centro América Ltda.</span>
+</div>
+</div>
+<div class="clients-section">
+<h3 class="clients-title">Clientes que Confían en Nosotros</h3>
+<div class="clients-grid">
+<!--
+                        ================================================
+                        LOGOS DE CLIENTES - REEMPLAZAR
+                        ================================================
+                        Fuente: Archivos corporativos o sitio web de D'GEO
+                        Cantidad: 11 logos de clientes reales
+                        Formato: PNG con transparencia
+                        Tamaño: 200x100px (mantener proporción)
+                        Clientes a incluir:
+                          1. CONAVI
+                          2. SOLIS
+                          3. Constructica
+                          4. OBELGA
+                          5. Fusión Inmobiliaria
+                          6. Fernández Vacio
+                          7. La Laguna
+                          8. Maccaferri
+                          9. UNA (Universidad Nacional)
+                          10. MEP (Ministerio de Educación Pública)
+                          11. MECO
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="D'GEO - Soluciones Geotécnicas de Alta Calidad">
-    <meta property="og:description" content="Empresa especializada en geotecnia con profesionales expertos comprometidos con la excelencia.">
-    <meta property="og:type" content="website">
-
-    <title>D'GEO - Soluciones Geotécnicas de Alta Calidad | Costa Rica</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23FF6B35'/><text x='50' y='60' font-size='40' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>D</text></svg>">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+                        Para reemplazar:
+                        - Cambiar div class="client-placeholder" por <img>
+                        - Ejemplo: <img src="/images/logos/conavi.png" alt="CONAVI">
+                        ================================================
+                        -->
+<div class="client-logo">
+<div class="client-placeholder">CONAVI</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">SOLIS</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">Constructica</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">OBELGA</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">Fusión Inmobiliaria</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">Fernández Vacio</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">La Laguna</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">Maccaferri</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">UNA</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">MEP</div>
+</div>
+<div class="client-logo">
+<div class="client-placeholder">MECO</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Casos de Éxito Section -->
+<section class="success-cases" id="proyectos">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Casos de Éxito</h2>
+<p class="section-subtitle">Proyectos destacados que demuestran nuestra excelencia técnica</p>
+</div>
+<div class="success-cases-grid">
+<article class="success-case-card">
+<div class="success-case-image">
+<img alt="Proyecto Green Park - Naves industriales" loading="lazy" src="assets/img/602944675_17911510506276969_8691084229694258944_n.jpg"/>
+</div>
+<div class="success-case-content">
+<h3 class="success-case-title">Green Park</h3>
+<p class="success-case-description">
+                                Diseño y construcción de naves industriales con estudios geotécnicos integrales y supervisión especializada.
+                            </p>
+</div>
+</article>
+<article class="success-case-card">
+<div class="success-case-image">
+<img alt="Caso de éxito Green Park Free Zone" loading="lazy" src="assets/img/603213663_17911510704276969_4621976219060672348_n.jpg"/>
+</div>
+<div class="success-case-content">
+<h3 class="success-case-title">Green Park Free Zone</h3>
+<p class="success-case-description">
+                                Proyecto de zona franca con estudios completos de mecánica de suelos, análisis de cimentaciones y monitoreo continuo.
+                            </p>
+</div>
+</article>
+</div>
+<div class="section-header" style="margin-top: var(--spacing-xl);">
+<h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+<p class="section-subtitle">Metodología comprobada para garantizar resultados excepcionales</p>
+</div>
+<div class="process-timeline">
+<div class="process-step">
+<div class="step-number">01</div>
+<div class="step-content">
+<h3 class="step-title">Consulta Inicial</h3>
+<p class="step-description">
+                                Reunión con el cliente para entender sus necesidades, objetivos del proyecto y requerimientos técnicos específicos.
+                            </p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-number">02</div>
+<div class="step-content">
+<h3 class="step-title">Análisis Técnico</h3>
+<p class="step-description">
+                                Investigación de campo, estudios geotécnicos detallados, ensayos de laboratorio y evaluación de condiciones del sitio.
+                            </p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-number">03</div>
+<div class="step-content">
+<h3 class="step-title">Ejecución</h3>
+<p class="step-description">
+                                Implementación de soluciones geotécnicas con supervisión continua, control de calidad y seguimiento de especificaciones.
+                            </p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-number">04</div>
+<div class="step-content">
+<h3 class="step-title">Entrega de Resultados</h3>
+<p class="step-description">
+                                Presentación de informes técnicos detallados con medios audiovisuales, recomendaciones y seguimiento post-proyecto.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto Section -->
+<section class="contact" id="contacto">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Contáctenos</h2>
+<p class="section-subtitle">Estamos listos para ayudarle con su proyecto geotécnico</p>
+</div>
+<div class="contact-grid">
+<div class="contact-info">
+<h3 class="contact-info-title">Información de Contacto</h3>
+<div class="contact-item">
+<div class="contact-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Teléfono</strong>
+<a href="tel:+50622538047">(506) 2253-8047</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Email</strong>
+<a href="mailto:info@dgeosoluciones.com">info@dgeosoluciones.com</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Dirección</strong>
+<span>Emma Gamboa, San Pedro<br/>San José, Costa Rica</span>
+</div>
+</div>
+<div class="contact-social">
+<a aria-label="Instagram D'GEO" class="social-link" href="https://www.instagram.com/dgeo_soluciones/" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="contact-form-wrapper">
+<form class="contact-form" id="contactForm" novalidate="">
+<div class="form-group">
+<label class="form-label" for="name">Nombre completo *</label>
+<input aria-required="true" class="form-input" id="name" name="name" required="" type="text"/>
+<span class="form-error" id="nameError"></span>
+</div>
+<div class="form-group">
+<label class="form-label" for="email">Correo electrónico *</label>
+<input aria-required="true" class="form-input" id="email" name="email" required="" type="email"/>
+<span class="form-error" id="emailError"></span>
+</div>
+<div class="form-group">
+<label class="form-label" for="phone">Teléfono *</label>
+<input aria-required="true" class="form-input" id="phone" name="phone" required="" type="tel"/>
+<span class="form-error" id="phoneError"></span>
+</div>
+<div class="form-group">
+<label class="form-label" for="message">Mensaje *</label>
+<textarea aria-required="true" class="form-input" id="message" name="message" required="" rows="5"></textarea>
+<span class="form-error" id="messageError"></span>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary btn-lg btn-block" type="submit">Enviar Mensaje</button>
+<a class="btn btn-whatsapp btn-lg btn-block" href="https://wa.me/50622538047?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios%20geotécnicos" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+                                    Contactar por WhatsApp
+                                </a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+<div class="footer-logo">D'GEO</div>
+<p class="footer-description">
+                        Soluciones geotécnicas de alta calidad con profesionales expertos comprometidos con la excelencia.
+                    </p>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Enlaces Rápidos</h4>
+<ul class="footer-links">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#proyectos">Proyectos</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Contacto</h4>
+<ul class="footer-contact">
+<li>
+<strong>Teléfono:</strong><br/>
+<a href="tel:+50622538047">(506) 2253-8047</a>
+</li>
+<li>
+<strong>Email:</strong><br/>
+<a href="mailto:info@dgeosoluciones.com">info@dgeosoluciones.com</a>
+</li>
+<li>
+<strong>Dirección:</strong><br/>
+                            Emma Gamboa, San Pedro<br/>
+                            San José, Costa Rica
+                        </li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">Síguenos</h4>
+<div class="footer-social">
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/dgeo_soluciones/" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/50622538047" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 D'GEO Soluciones Geotécnicas. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<script src="app.js"></script>
+</body>
 </html>
